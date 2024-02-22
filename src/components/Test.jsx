@@ -6,7 +6,7 @@ const Test = () => {
   const [open, setOpen] = useState (false)
 
   const variants = {
-    visible:{opacity:1, x:1000, transition:{type:"spring"}},
+    visible:{opacity:1, x:600, transition:{type:"spring", stiffness:200}},
     hidden:{opacity:0},
   }
   return (
