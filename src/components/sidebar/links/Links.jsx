@@ -2,10 +2,11 @@ import React from 'react'
 
 const Links = () => {
   return (
-    <div>
-      
+    <div className='links'>
+      links
     </div>
   )
 }
 
 export default Links
+
