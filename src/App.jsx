@@ -4,7 +4,7 @@ import Navbar from "./components/navbar/Navbar";
 
 const App = () => {
   return <div>
-    {/* <section>
+    <section>
       <Navbar/>
     </section>
     <section>Parallex</section>
@@ -13,8 +13,8 @@ const App = () => {
     <section>Portfolio1</section>
     <section>Portfolio2</section>
     <section>Portfolio3</section>
-    <section>Kontakt</section> */}
-    <Test />
+    <section>Kontakt</section>
+    {/* <Test /> */}
   </div>;
 };
 
