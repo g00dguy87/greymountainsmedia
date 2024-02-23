@@ -5,11 +5,7 @@ import Links from "./links/Links";
 import ToggleButton from "./toggleButton/toggleButton";
 
 
-
- const Sidebar = () => {
-    const [open,setOpen] = useState(false)
-
-    const variants = {
+const variants = {
         open:{
             clipPath: "circle(1200px at 50px 50px)",
             transition:{
@@ -27,6 +23,11 @@ import ToggleButton from "./toggleButton/toggleButton";
             },
         },
     };
+
+ const Sidebar = () => {
+    const [open,setOpen] = useState(false)
+
+
 
     return <motion.div className="sidebar" animate={open ? "open" : "closed"}>
        <motion.div className="bg" variants={variants}>
