@@ -9,7 +9,7 @@ const variants = {
   },
   closed: {
     transition: {
-      staggerChildren: 0.5,
+      staggerChildren: 0.05,
       staggerDirection: -1,
     },
   },
@@ -25,6 +25,7 @@ const itemVariants = {
     opacity: 0,
   }
 }
+
 
 
 const Links = () => {
