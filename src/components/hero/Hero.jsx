@@ -14,7 +14,10 @@ const Hero = () => {
                 </div>
                 <img src='/scroll.png' alt='scroll' />
             </div>
-        </div>  
+        </div>
+        <div className='slidingTextContainer'>
+            Film & Fernsehen
+        </div>
         <div className='imageContainer'>
             <img src='hero.png' alt='gm' />
         </div>
