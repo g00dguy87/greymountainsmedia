@@ -1,5 +1,6 @@
 import React from 'react'
 import "./hero.scss"
+import { motion } from 'framer-motion'
 
 const textVariants = {
     initial:{
@@ -20,15 +21,20 @@ const Hero = () => {
   return (
     <div className='hero'>
         <div className='wrapper'>
-            <div className='textContainer' variants={textVariants}>
-                <h2 variants={textVariants}>Grey Mountains Media</h2>
-                <h1 variants={textVariants}>Deine rundum Agentur für alles</h1>
-                <div variants={textVariants} className='buttons'>
-                    <button variants={textVariants}>Mehr Erfahren</button>
-                    <button variants={textVariants}>Kontaktieren</button>
-                </div>
-                <img variants={textVariants} src='/scroll.png' alt='scroll' />
-            </div>
+            <motion.div 
+            className='textContainer' 
+            variants={textVariants} 
+            initial="initial"
+            animate="animate"
+            >
+                <motion.h2 variants={textVariants}>Grey Mountains Media</motion.h2>
+                <motion.h1 variants={textVariants}>Deine rundum Agentur für alles</motion.h1>
+                <motion.div variants={textVariants} className='buttons'>
+                    <motion.button variants={textVariants}>Mehr Erfahren</motion.button>
+                    <motion.button variants={textVariants}>Kontaktieren</motion.button>
+                </motion.div>
+                <motion.img variants={textVariants} src='/scroll.png' alt='scroll' />
+            </motion.div>
         </div>
         <div className='slidingTextContainer'>
             Film & Fernsehen
